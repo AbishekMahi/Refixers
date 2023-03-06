@@ -5,9 +5,27 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Refixers - Services</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <!-- Primary Meta Tags -->
+  <title>Expert Home Repair and Maintenance Services - Refixers</title>
+  <meta name="title" content="Expert Home Repair and Maintenance Services - Refixers">
+  <meta name="description"
+    content="Professional and reliable home repair and maintenance services by Refixers. Our skilled technicians offer a range of services, including door and window refixing, handle and lock refixing, kitchen and wardrobe refixing, and more.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://refixers.in/services.html">
+  <meta property="og:title" content="Expert Home Repair and Maintenance Services - Refixers">
+  <meta property="og:description"
+    content="Professional and reliable home repair and maintenance services by Refixers. Our skilled technicians offer a range of services, including door and window refixing, handle and lock refixing, kitchen and wardrobe refixing, and more.">
+  <meta property="og:image" content="https://refixers.in/assets/img/banner.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://refixers.in/services.html">
+  <meta property="twitter:title" content="Expert Home Repair and Maintenance Services - Refixers">
+  <meta property="twitter:description"
+    content="Professional and reliable home repair and maintenance services by Refixers. Our skilled technicians offer a range of services, including door and window refixing, handle and lock refixing, kitchen and wardrobe refixing, and more.">
+  <meta property="twitter:image" content="https://refixers.in/assets/img/banner.png">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -76,7 +94,68 @@
       </div>
     </div>
     <!-- End Breadcrumbs -->
+    <div class="modal fade" id="bookform" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" class="get-started">
+          <div class="modal-header" style="justify-content: center;">
+            <h5 class="modal-title" id="exampleModalLabel">Service One</h5>
+            <!-- <button type="button" title="Close" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button> -->
+          </div>
+          <div class="get-started">
 
+            <form class="gform pure-form pure-form-stacked php-email-form" method="POST"
+              data-email="abishekmas0708@gmail.com" style="border-radius: calc(0.5rem - 1px);"
+              action="https://script.google.com/macros/s/AKfycbwCAaORvCnzdYHbQv10Gzs3q2lUbDUn8yd22CCea_NhUBTgPy2xCFCCWPIcKvRpL7BD/exec">
+              <!-- <p>Get a quote today and take the first step towards transforming your home with Refixers.</p> -->
+              <div class="row gy-3 form-elements">
+                <h3>Get a quote</h3>
+                <div class="col-md-12">
+                  <input type="text" name="Name" class="form-control" placeholder="Name" required>
+                </div>
+
+                <div class="col-md-12 ">
+                  <input type="email" class="form-control" name="Email" placeholder="Email" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="Phone" placeholder="Phone" required>
+                </div>
+                <div class="col-md-12" title="Service Selected">
+                  <input id="servicetype" class="form-control" type="text" type="text" readonly value="" disabled
+                    name="Service Type" required placeholder="Service Type">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="Message" rows="6" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="error-message"></div>
+                  <!-- <div class="loading">Loading</div>
+                  <div class="sent-message">Your quote request has been sent successfully. Thank you!</div> -->
+                  <button type="submit" id="button">Get a quote</button>
+                </div>
+              </div>
+              <!-- Thankyou_message -->
+              <div class="thankyou_message" style="display:none;">
+                <center>
+                  <div class="thanks" style="padding: 0; width: 15rem;">
+                    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_y2hxPc.json"
+                      background="transparent" speed=".6" loop autoplay>
+                    </lottie-player>
+                  </div>
+                  <p>Thank You,
+                    <br> Your quote request has been sent successfully.
+                  </p>
+                  <button class="btn btn-success" onClick="window.location.reload();">Submit
+                    New</button>
+                </center>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- ======= Services Section ======= -->
     <section id="services" class="services section-bg">
       <div class="container" data-aos="fade-up">
@@ -88,102 +167,146 @@
         </div>
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="service-item  position-relative">
+            <div class="service-item position-relative shadow">
               <img width="100%" style="padding: -40px;" src="assets/img/services/Door Refixing.JPG" alt="Door Refixing">
               <div class="service-txt">
                 <h3>Door Refixing</h3>
                 <p>Our expert technicians are skilled in fixing all types of doors, including UPVC doors, glass doors,
-                  and
-                  wooden doors. Whether your door is sticking, sagging, or simply in need of a new handle, we can get it
-                  working smoothly again in no time.</p>
+                  and wooden doors. Whether your door is sticking, sagging, or simply in need of a new handle, we can
+                  get it working smoothly again in no time.</p>
+                <div class="row">
+                  <div class="col"></div>
+                  <button style="padding: 10px; text-align: center; margin-bottom: 0%;" data-aos-delay="100"
+                    data-bs-toggle="modal" data-bs-target="#bookform" data-whatever="Door Refixing"
+                    class="btn-get-started rounded col">Get a quote</button>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
 
-            <div class="service-item  position-relative">
+            <div class="service-item position-relative shadow">
               <img width="100%" style="padding: -40px;" src="assets/img/services/window-fix.jpg" alt="Windows Refixing">
               <div class="service-txt">
                 <h3>Windows Refixing</h3>
                 <p>From broken panes to worn weather stripping, our technicians have the expertise to fix any window
                   issue. We can replace glass, repair frames, and install new locks and hardware to ensure your windows
                   are working properly and efficiently.</p>
+                <div class="row">
+                  <div class="col"></div>
+                  <button style="padding: 10px; text-align: center; margin-bottom: 0%;" data-aos-delay="100"
+                    data-bs-toggle="modal" data-bs-target="#bookform" data-whatever="Windows Refixing"
+                    class="btn-get-started rounded col">Get a quote</button>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
+            <div class="service-item position-relative shadow">
               <img width="100%" style="padding: -40px;" src="assets/img/services/kitchen-fix.jpg"
                 alt="Kitchens And Wardrobes Refixing">
               <div class="service-txt">
-                <h3>Kitchens And Wardrobes Refixing</h3>
+                <h3>Kitchens & Wardrobes Refixing</h3>
                 <p>The busiest spots in any home, kitchens and wardrobes require regular maintenance to stay functional
                   and organized. We can repair or replace hinges, drawers, shelves, and more to ensure your
                   kitchen and wardrobe are working at their best.</p>
+                <div class="row">
+                  <div class="col"></div>
+                  <button style="padding: 10px; text-align: center; margin-bottom: 0%;" data-aos-delay="100"
+                    data-bs-toggle="modal" data-bs-target="#bookform" data-whatever="Kitchens And Wardrobes Refixing"
+                    class="btn-get-started rounded col">Get a quote</button>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
+            <div class="service-item position-relative shadow">
               <img width="100%" style="padding: -40px;" src="assets/img/services/handle-fixing.jpg"
                 alt="Handles Refixing">
               <div class="service-txt">
                 <h3>Handles Refixing</h3>
                 <p>If your door or cabinet handles are loose, sticking, or broken, our technicians can help. We can
-                  repair
-                  or replace handles to ensure they are functioning properly and securely.</p>
+                  repair or replace handles to ensure they are functioning properly and securely.</p>
+                <div class="row">
+                  <div class="col"></div>
+                  <button style="padding: 10px; text-align: center; margin-bottom: 0%;" data-aos-delay="100"
+                    data-bs-toggle="modal" data-bs-target="#bookform" data-whatever="Handles Refixing"
+                    class="btn-get-started rounded col">Get a quote</button>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
+            <div class="service-item position-relative shadow">
               <img width="100%" style="padding: -40px;" src="assets/img/services/lamination Refixing.jpg"
                 alt="Lamination Refixing">
               <div class="service-txt">
                 <h3>Lamination Refixing</h3>
                 <p>Laminate surfaces can become damaged over time, making them less attractive and less durable. We can
                   repair or replace laminate surfaces, restoring them to their original beauty and functionality.</p>
+                <div class="row">
+                  <div class="col"></div>
+                  <button style="padding: 10px; text-align: center; margin-bottom: 0%;" data-aos-delay="100"
+                    data-bs-toggle="modal" data-bs-target="#bookform" data-whatever="Lamination Refixing"
+                    class="btn-get-started rounded col">Get a quote</button>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
+            <div class="service-item position-relative shadow">
               <img width="100%" style="padding: -40px;" src="assets/img/services/hings Refixing.jpg"
                 alt="Hinges Refixing">
               <div class="service-txt">
                 <h3>Hinges Refixing</h3>
                 <p>Hinges can become loose or rusty, making doors difficult to open and close. Our technicians can
-                  repair
-                  or replace hinges to ensure your doors are functioning properly and smoothly.</p>
+                  repair or replace hinges to ensure your doors are functioning properly and smoothly.</p>
+                <div class="row">
+                  <div class="col"></div>
+                  <button style="padding: 10px; text-align: center; margin-bottom: 0%;" data-aos-delay="100"
+                    data-bs-toggle="modal" data-bs-target="#bookform" data-whatever="Hinges Refixing"
+                    class="btn-get-started rounded col">Get a quote</button>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
+            <div class="service-item position-relative shadow">
               <img width="100%" style="padding: -40px;" src="assets/img/services/keyfix.jpg"
                 alt="Key Refixing & Change">
               <div class="service-txt">
                 <h3>Key Refixing & Change</h3>
                 <p>Whether you need a new key made or your existing key repaired, our technicians can help. We can also
                   change your locks and provide new keys to ensure your home is secure and your belongings are safe.</p>
+                <div class="row">
+                  <div class="col"></div>
+                  <button style="padding: 10px; text-align: center; margin-bottom: 0%;" data-aos-delay="100"
+                    data-bs-toggle="modal" data-bs-target="#bookform" data-whatever="Key Refixing & Change"
+                    class="btn-get-started rounded col">Get a quote</button>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
+            <div class="service-item position-relative shadow">
               <img width="100%" style="padding: -40px;" src="assets/img/services/lock-fixing.jpg" alt="Lock Refixing">
               <div class="service-txt">
                 <h3>Lock Refixing</h3>
                 <p>A broken lock can be a serious security issue. Our technicians can repair or replace locks to ensure
                   your home is secure and protected.</p>
+                <div class="row">
+                  <div class="col"></div>
+                  <button style="padding: 10px; text-align: center; margin-bottom: 0%;" data-aos-delay="100"
+                    data-bs-toggle="modal" data-bs-target="#bookform" data-whatever="Lock Refixing"
+                    class="btn-get-started rounded col">Get a quote</button>
+                </div>
               </div>
             </div>
           </div>
@@ -230,7 +353,7 @@
               <i class="bi bi-envelope"></i>
               <h3>Email Us</h3>
               <a href="mailto:">
-                <p>contact@refixers.in</p>
+                <p>info@refixers.in</p>
               </a> <br>
             </div>
           </div>
@@ -335,22 +458,21 @@
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
             </ul>
-          </div><!-- End footer links column-->
+          </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">Product Management</a></li>
-              <li><a href="#">Marketing</a></li>
-              <li><a href="#">Graphic Design</a></li>
+              <li><a href="services.html">Door & windows Fixing</a></li>
+              <li><a href="services.html">Kitchen & Wardrobe Fixing</a></li>
+              <li><a href="services.html">Handle & Hinges Fixing</a></li>
+              <li><a href="services.html">Lamination Refixing</a></li>
+              <li><a href="services.html">Locks & Key's Refixing</a></li>
             </ul>
           </div>
 
@@ -374,8 +496,6 @@
               <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
-
-
 
         </div>
       </div>
@@ -401,6 +521,129 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script data-cfasync="false" type="text/javascript">
+    function show(rate) {
+      document.getElementById("rateMsg").value = rate;
+    }
+    (function () {
+      function validEmail(email) {
+        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+        return re.test(email);
+      }
+
+      function validateHuman(honeypot) {
+        if (honeypot) {
+          console.log("Robot Detected!");
+          return true;
+        } else {
+          console.log("Welcome Human!");
+        }
+      }
+
+      function getFormData(form) {
+        var elements = form.elements;
+
+        var fields = Object.keys(elements).filter(function (k) {
+          return (elements[k].name !== "honeypot");
+        }).map(function (k) {
+          if (elements[k].name !== undefined) {
+            return elements[k].name;
+          } else if (elements[k].length > 0) {
+            return elements[k].item(0).name;
+          }
+        }).filter(function (item, pos, self) {
+          return self.indexOf(item) == pos && item;
+        });
+
+        var formData = {};
+        fields.forEach(function (name) {
+          var element = elements[name];
+          formData[name] = element.value;
+          if (element.length) {
+            var data = [];
+            for (var i = 0; i < element.length; i++) {
+              var item = element.item(i);
+              if (item.checked || item.selected) {
+                data.push(item.value);
+              }
+            }
+            formData[name] = data.join(', ');
+          }
+        });
+
+        // add form-specific values into the data
+        formData.formDataNameOrder = JSON.stringify(fields);
+        formData.formGoogleSheetName = form.dataset.sheet || "Sheet1"; // default sheet name
+        formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
+
+        console.log(formData);
+        return formData;
+      }
+
+      function handleFormSubmit(event) {
+        event.preventDefault();
+        var form = event.target;
+        var data = getFormData(form);
+        if (data.email && !validEmail(data.email)) {
+          var invalidEmail = form.querySelector(".email-invalid");
+          if (invalidEmail) {
+            invalidEmail.style.display = "block";
+            return false;
+          }
+        } else {
+          disableAllButtons(form);
+          var url = form.action;
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', url);
+          xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+          xhr.onreadystatechange = function () {
+            console.log(xhr.status, xhr.statusText);
+            console.log(xhr.responseText);
+            var formElements = form.querySelector(".form-elements")
+            if (formElements) {
+              formElements.style.display = "none"; // hide form
+            }
+            var thankYouMessage = form.querySelector(".thankyou_message");
+            if (thankYouMessage) {
+              thankYouMessage.style.display = "block";
+            }
+            return;
+          };
+          var encoded = Object.keys(data).map(function (k) {
+            return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+          }).join('&');
+          xhr.send(encoded);
+        }
+      }
+
+      function loaded() {
+        console.log("Contact form submission handler loaded successfully.");
+        var forms = document.querySelectorAll("form.gform");
+        for (var i = 0; i < forms.length; i++) {
+          forms[i].addEventListener("submit", handleFormSubmit, false);
+        }
+      };
+      document.addEventListener("DOMContentLoaded", loaded, false);
+
+      function disableAllButtons(form) {
+        var buttons = form.querySelectorAll("#button");
+        for (var i = 0; i < buttons.length; i++) {
+          buttons[i].disabled = true;
+        }
+      }
+    })();
+  </script>
+
+  <script>
+    $('#bookform').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget) // Button that triggered the modal
+      var recipient = button.data('whatever') // Extract info from data-* attributes
+      var modal = $(this)
+      modal.find('.modal-title').text(recipient)
+      modal.find('#servicetype').val(recipient)
+    });
+  </script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -408,6 +651,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
